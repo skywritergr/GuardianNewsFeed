@@ -3,16 +3,20 @@ html{font-family: Georgia,serif, Arial; font-size: 14px}
   Depending on the active tab it changes the z-index. */
 .gdn { min-height: 250px; position: relative; margin-left: auto; margin-right: auto; }
 .gdn > div { display: inline; }
-.gdn > div > a { margin-left: -1px; position: relative; left: 1px; text-decoration: none; color: black; background: white; display: block; float: left; padding: 5px 10px; font-weight: bold; }
+.gdn > div > a { margin-left: -1px; position: relative; left: 1px; text-decoration: none; color: white; display: block; float: left; padding: 5px 10px; }
 .gdn > div:not(:target) > a { border-bottom: 0; background: -moz-linear-gradient(top, white, #eee); }	
 .gdn > div:target > a { text-decoration: underline; }	
-.gdn > div > div { background: white; z-index: -2; left: 0; top: 30px; bottom: 0; right: 0; padding: 20px; border: 1px solid #005689; height: 400px; overflow-y: scroll; overflow-x: hidden;  }	
+.gdn > div > div { background: white; z-index: -2; left: 0; top: 30px; bottom: 0; right: 0; padding: 20px; border: 1px solid #0061A6; height: 400px; overflow-y: scroll; overflow-x: hidden;  }	
 .gdn > div > div > ol > li > a:link { display: inline-block; margin-bottom: 5px; text-decoration: none; color: #333; }
 .gdn > div > div > ol > li > a:visited { color: #808080; }
 .gdn > div > div > ol > li > a:hover { text-decoration: underline; }
 .gdn > div > div > ol > li > a > img { float: left; margin-right: 5px }
 .gdn > div:not(:target) > div { position: absolute }
 .gdn > div:target > div { position: absolute; z-index: 0; }
+/* Guardian zones styles*/
+.zone-news { background-color: #D61D00; }
+.zone-sport { background-color: #008000; }
+.zone-travel { background-color: #066EC9; }
 
 /* Responsive queries in order to make the news container mobile friendly. */
 @media screen and (min-width: 1200px){
